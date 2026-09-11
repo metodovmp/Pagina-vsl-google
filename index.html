@@ -42,17 +42,26 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: center;
     }
 
-.bainer-topo {
-      background:#ff0000;
+    /* URGÊNCIA PREMIUM OTIMIZADA - GOOGLE ADS */
+  .bainer-topo {
+      background:#0A0A0A;
       color:#fff;
       text-align:center;
-      padding:10px;
-      font-weight:700;
-      font-size:13px;
-      width: 100%;
-      letter-spacing:0.5px;
+      padding:12px 22px;
+      font-weight:600;
+      font-size:12.5px;
+      width: fit-content;
+      max-width: 88%;
+      margin:16px auto 0;
+      letter-spacing:0.8px;
+      border:1.5px solid #D4AF37;
+      border-radius:14px;
+      box-shadow:0 0 18px rgba(212,175,55,0.15);
+      text-transform:uppercase;
+      line-height:1.35;
     }
 
 .container {
@@ -169,7 +178,7 @@
 <body>
 
 <div class="bainer-topo">
-⚠️ SÓ HOJE: POR APENAS R$67. DEPOIS VOLTA PARA R$197
+SÓ HOJE: POR APENAS R$67. DEPOIS VOLTA PARA R$197
 </div>
 
 <div class="container">
@@ -179,15 +188,15 @@ SISTEMA DE PRESENÇA VMP
 </div>
 
 <h1 style="font-size:28px; text-align:center; line-height:1.2; font-weight:900; letter-spacing:1px; margin:0 0 8px 0;">
-  <span style="color:#FFD000 !important; opacity:1 !important; filter:none !important; text-shadow:0 0 10px rgba(255,208,0,0.15);">
+  <span style="color:#FFD000!important; opacity:1!important; filter:none!important; text-shadow:0 0 10px rgba(255,208,0,0.15);">
     SUA VOZ NÃO MUDA NADA
   </span><br>
 
-  <span style="color:#C79A28 !important; opacity:1 !important; filter:none !important; text-shadow:0 0 8px rgba(199,154,40,0.12);">
+  <span style="color:#C79A28!important; opacity:1!important; filter:none!important; text-shadow:0 0 8px rgba(199,154,40,0.12);">
     PORQUE SUA
   </span><br>
 
-  <span style="color:#FFD000 !important; opacity:1 !important; filter:none !important; text-shadow:0 0 10px rgba(255,208,0,0.15);">
+  <span style="color:#FFD000!important; opacity:1!important; filter:none!important; text-shadow:0 0 10px rgba(255,208,0,0.15);">
     PRESENÇA NÃO FALA
   </span>
 </h1>
@@ -222,7 +231,7 @@ SISTEMA DE PRESENÇA VMP
   </div>
 
 <button id="btnVsl" class="vmp-button">
-   QUERO INICIAR OS 7 PROTOCOLOS
+   QUERO ATIVAR OS 7 PROTOCOLOS
 </button>
 
 <div style="font-size:12px; color:#999; margin-bottom:24px; font-weight:500;">
@@ -235,11 +244,11 @@ SISTEMA DE PRESENÇA VMP
 
 <div class="divider"></div>
 
-<div style="font-size:11px; color:#444; padding-top:10px; font-weight:400; line-height:1.6;">
+<div style="font-size:11px; color:#7A7A7A; padding-top:10px; font-weight:400; line-height:1.6;">
   Sistema de Presença VMP © 2026. Todos os direitos reservados.<br><br>
   Este produto não garante resultados. Qualquer resultado depende da
   natureza individual de cada pessoa.<br><br>
-  Termos de Uso • Política de Privacidade • Suporte
+  <span style="color:#888;">Termos de Uso • Política de Privacidade • Suporte</span>
 </div>
 
 </div>
@@ -248,10 +257,7 @@ SISTEMA DE PRESENÇA VMP
   const btnVsl = document.getElementById('btnVsl');
 
   btnVsl.addEventListener('click', () => {
-    // Dispara evento do Pixel
     fbq('track', 'InitiateCheckout', {value: 67.00, currency: 'BRL', content_ids: ['vmp-realinhamento'], content_name: 'VMP Realinhamento', content_type: 'product'});
-
-    // Gatilho de "Ajustando Leitura"
     btnVsl.innerText = "Ajustando sua Presença…";
     btnVsl.disabled = true;
 
@@ -262,4 +268,4 @@ SISTEMA DE PRESENÇA VMP
 </script>
 
 </body>
-</html>
+  </html>
